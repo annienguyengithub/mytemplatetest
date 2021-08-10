@@ -8,7 +8,7 @@ info:
     #swagger](http://swagger.io/irc/).  For this sample, you can use the api key
     `special-key` to test the authorization filters.
   version: 1.0.0
-  title: Z_GL_WORKLOAD_PLAN
+  title: Z_GL_WORKLOAD_PLAN_Title
   termsOfService: 'https://d2l00437g.dc02.its.hpecorp.net:44300/sap/opu/odata/sap/Z_GL_WORKLOAD_PLAN_SRV/'
   contact:
     email: apiteam@swagger.io
@@ -21,15 +21,15 @@ tags:
     externalDocs:
       description: Find out more
       url: 'https://d2l00437g.dc02.its.hpecorp.net:44300/sap/opu/odata/sap/Z_GL_WORKLOAD_PLAN_SRV/'
-  - name: Tag#2_annie
+  - name: Tag#2_annie2
     description: Access to GL_WorkLoad_Plan orders
-  - name: Tag#3_annie
+  - name: Tag#3_annie3
     description: Operations about user
     externalDocs:
-      description: Find out more about our store
+      description: Find out more about our GL Workload
       url: 'https://d2l00437g.dc02.its.hpecorp.net:44300/sap/opu/odata/sap/Z_GL_WORKLOAD_PLAN_SRV/'
 paths:
-  /Tag#1_Workload:
+  /Tag#1_Workload_path:
     post:
       tags:
         - Workload
@@ -71,7 +71,7 @@ paths:
   /Workload/findByStatus:
     get:
       tags:
-        - Workload
+        - Tag#1_Workload
       summary: Finds Workloads by status
       description: Multiple status values can be provided with comma separated strings
       operationId: findWorkloadsByStatus
@@ -277,7 +277,7 @@ paths:
   /Tag#2_annie/inventory:
     get:
       tags:
-        - store
+        - Tag#2_annie
       summary: Returns Workload inventories by status
       description: Returns a map of status codes to quantities
       operationId: getInventory
@@ -296,7 +296,7 @@ paths:
   /Tag#2_annie/order:
     post:
       tags:
-        - store
+        - Tag#2_annie
       summary: Place an order for a Workload
       description: ''
       operationId: placeOrder
@@ -322,7 +322,7 @@ paths:
   '/Tag#2_annie/order/{orderId}':
     get:
       tags:
-        - annie2
+        - Tag#2_annie
       summary: Find purchase order by ID
       description: >-
         For valid response try integer IDs with value >= 1 and <= 10. Other
@@ -354,7 +354,7 @@ paths:
           description: Order not found
     delete:
       tags:
-        - annie2
+        - Tag#2_annie
       summary: Delete purchase order by ID
       description: >-
         For valid response try integer IDs with positive integer value. Negative
@@ -379,7 +379,7 @@ paths:
   /Tag#3_annie:
     post:
       tags:
-        - annie3
+        - Tag#3_annie
       summary: Create user
       description: This can only be done by the logged in user.
       operationId: createUser
@@ -396,7 +396,7 @@ paths:
   /Tag#3_annie/createWithArray:
     post:
       tags:
-        - annie3
+        - Tag#3_annie
       summary: Creates list of users with given input array
       description: ''
       operationId: createUsersWithArrayInput
@@ -408,7 +408,7 @@ paths:
   /Tag#3_annie/createWithList:
     post:
       tags:
-        - annie3
+        - Tag#3_annie
       summary: Creates list of users with given input array
       description: ''
       operationId: createUsersWithListInput
@@ -420,7 +420,7 @@ paths:
   /Tag#3_annie/login:
     get:
       tags:
-        - annie3
+        - Tag#3_annie
       summary: Logs user into the system
       description: ''
       operationId: loginUser
@@ -463,7 +463,7 @@ paths:
   /Tag#3_annie/logout:
     get:
       tags:
-        - annie3
+        - Tag#3_annie
       summary: Logs out current logged in user session
       description: ''
       operationId: logoutUser
@@ -473,7 +473,7 @@ paths:
   '/Tag#3_annie/{username}':
     get:
       tags:
-        - annie3
+        - Tag#3_annie
       summary: Get user by user name
       description: ''
       operationId: getUserByName
