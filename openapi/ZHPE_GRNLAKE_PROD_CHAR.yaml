@@ -43,8 +43,8 @@ paths:
           description: Invalid input
       security:
         - GL_Prod_Char_Auth:
-            - 'write:Workloads'
-            - 'read:Workloads'
+            - 'write:Prod_Char'
+            - 'read:Prod_Char'
       requestBody:
         $ref: '#/components/requestBodies/Workload'
     put:
@@ -64,8 +64,8 @@ paths:
           description: Validation exception
       security:
         - GL_Prod_Char_Auth:
-            - 'write:Workloads'
-            - 'read:Workloads'
+            - 'write:Prod_Char'
+            - 'read:Prod_Char'
       requestBody:
         $ref: '#/components/requestBodies/Workload'
   /Workload/findByStatus:
@@ -108,8 +108,8 @@ paths:
           description: Invalid status value
       security:
         - GL_WorkLoad_Plan_auth:
-            - 'write:Workloads'
-            - 'read:Workloads'
+            - 'write:Prod_Char'
+            - 'read:Prod_Char'
   /Workload/findByTags:
     get:
       tags:
@@ -136,8 +136,8 @@ paths:
           description: Invalid tag value
       security:
         - GL_WorkLoad_Plan_auth:
-            - 'write:Workloads'
-            - 'read:Workloads'
+            - 'write:Prod_Char'
+            - 'read:Prod_Char'
       deprecated: true
   '/Workload/{WorkloadId}':
     get:
@@ -190,9 +190,9 @@ paths:
         '405':
           description: Invalid input
       security:
-        - GL_WorkLoad_Plan_auth:
-            - 'write:Workloads'
-            - 'read:Workloads'
+        - GL_Prod_Char_Auth:
+            - 'write:Prod_Char'
+            - 'read:Prod_Char'
       requestBody:
         content:
           application/x-www-form-urlencoded:
@@ -232,9 +232,9 @@ paths:
         '404':
           description: Workload not found
       security:
-        - GL_WorkLoad_Plan_auth:
-            - 'write:Workloads'
-            - 'read:Workloads'
+        - GL_Prod_Char_Auth:
+            - 'write:Prod_Char'
+            - 'read:Prod_Char'
   '/Workload/{WorkloadId}/uploadImage':
     post:
       tags:
@@ -258,9 +258,9 @@ paths:
               schema:
                 $ref: '#/components/schemas/ApiResponse'
       security:
-        - GL_WorkLoad_Plan_auth:
-            - 'write:Workloads'
-            - 'read:Workloads'
+        - GL_Prod_Char_Auth:
+            - 'write:Prod_Char'
+            - 'read:Prod_Char'
       requestBody:
         content:
           multipart/form-data:
@@ -584,14 +584,14 @@ components:
       description: Workload object that needs to be added to the store
       required: true
   securitySchemes:
-    GL_WorkLoad_Plan_auth:
+    GL_Prod_Char_Auth:
       type: oauth2
       flows:
         implicit:
           authorizationUrl: 'http://sap/opu/odata/sap/ZHPE_GRNLAKE_PROD_CHAR/?$format=xml'
           scopes:
-            'write:Workloads': modify Workloads in your account
-            'read:Workloads': read your Workloads
+            'write:Prod_Char': modify Prod_Char in your account
+            'read:Prod_Char': read your Prod_Char
     api_key:
       type: apiKey
       name: api_key

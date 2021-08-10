@@ -63,7 +63,7 @@ paths:
         '405':
           description: Validation exception
       security:
-        - GL_WorkLoad_Plan_auth:
+        - GL_WorkLoad_Price_and_Doc_Auth:
             - 'write:Workloads'
             - 'read:Workloads'
       requestBody:
@@ -107,7 +107,7 @@ paths:
         '400':
           description: Invalid status value
       security:
-        - GL_WorkLoad_Plan_auth:
+        - GL_WorkLoad_Price_and_Doc_Auth:
             - 'write:Workloads'
             - 'read:Workloads'
   /Workload/findByTags:
@@ -135,7 +135,7 @@ paths:
         '400':
           description: Invalid tag value
       security:
-        - GL_WorkLoad_Plan_auth:
+        - GL_WorkLoad_Price_and_Doc_Auth:
             - 'write:Workloads'
             - 'read:Workloads'
       deprecated: true
@@ -232,7 +232,7 @@ paths:
         '404':
           description: Workload not found
       security:
-        - GL_WorkLoad_Plan_auth:
+        - GL_WorkLoad_Price_and_Doc_Auth:
             - 'write:Workloads'
             - 'read:Workloads'
   '/Workload/{WorkloadId}/uploadImage':
@@ -258,7 +258,7 @@ paths:
               schema:
                 $ref: '#/components/schemas/ApiResponse'
       security:
-        - GL_WorkLoad_Plan_auth:
+        - GL_WorkLoad_Price_and_Doc_Auth:
             - 'write:Workloads'
             - 'read:Workloads'
       requestBody:
@@ -584,7 +584,7 @@ components:
       description: Workload object that needs to be added to the store
       required: true
   securitySchemes:
-    GL_WorkLoad_Plan_auth:
+    GL_WorkLoad_Price_and_Doc_Auth:
       type: oauth2
       flows:
         implicit:
