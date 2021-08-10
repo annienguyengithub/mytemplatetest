@@ -19,15 +19,17 @@ tags:
   - name: Tag#1_Workload
     description: Everything about your Workloads
     externalDocs:
-      description: Find out more
+      description: Find out more about our GL Workload
       url: 'https://d2l00437g.dc02.its.hpecorp.net:44300/sap/opu/odata/sap/Z_GL_WORKLOAD_PLAN_SRV/'
   - name: Tag#2_annie_order
     description: Access to GL_WorkLoad_Plan orders
-    url: 'https://d2l00437g.dc02.its.hpecorp.net:44300/sap/opu/odata/sap/Z_GL_WORKLOAD_PLAN_SRV/'
+    externalDocs:
+      description: Find out more about our GL Workload Order
+      url: 'https://d2l00437g.dc02.its.hpecorp.net:44300/sap/opu/odata/sap/Z_GL_WORKLOAD_PLAN_SRV/'
   - name: Tag#3_annie_user
     description: Operations about user
     externalDocs:
-      description: Find out more about our GL Workload
+      description: Find out more about our GL Workload User
       url: 'https://d2l00437g.dc02.its.hpecorp.net:44300/sap/opu/odata/sap/Z_GL_WORKLOAD_PLAN_SRV/'
 paths:
   /Tag#1_Workload_path:
