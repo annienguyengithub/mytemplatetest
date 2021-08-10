@@ -16,24 +16,24 @@ info:
     name: Apache 2.0
     url: 'https://d2l00437g.dc02.its.hpecorp.net:44300/sap/opu/odata/sap/Z_GL_WORKLOAD_PLAN_SRV/'
 tags:
-  - name: Workload
+  - name: Tag#1_Workload
     description: Everything about your Workloads
     externalDocs:
       description: Find out more
       url: 'https://d2l00437g.dc02.its.hpecorp.net:44300/sap/opu/odata/sap/Z_GL_WORKLOAD_PLAN_SRV/'
-  - name: store
+  - name: Tag#2_annie
     description: Access to GL_WorkLoad_Plan orders
-  - name: user
+  - name: Tag#3_annie
     description: Operations about user
     externalDocs:
       description: Find out more about our store
       url: 'https://d2l00437g.dc02.its.hpecorp.net:44300/sap/opu/odata/sap/Z_GL_WORKLOAD_PLAN_SRV/'
 paths:
-  /Workload:
+  /Tag#1_Workload:
     post:
       tags:
         - Workload
-      summary: Add a new Workload to the store
+      summary: Add a new Workload to GreenLake
       description: ''
       operationId: addWorkload
       responses:
@@ -173,7 +173,7 @@ paths:
     post:
       tags:
         - Workload
-      summary: Updates a Workload in the store with form data
+      summary: Updates a Workload in Green Lake with form data
       description: ''
       operationId: updateWorkloadWithForm
       parameters:
@@ -207,7 +207,7 @@ paths:
                   type: string
     delete:
       tags:
-        - Workload
+        - Tag#1_Workload
       summary: Deletes a Workload
       description: ''
       operationId: deleteWorkload
@@ -235,10 +235,10 @@ paths:
         - GL_WorkLoad_Plan_auth:
             - 'write:Workloads'
             - 'read:Workloads'
-  '/Workload/{WorkloadId}/uploadImage':
+  '/Tag#1_Workload/{WorkloadId}/uploadImage':
     post:
       tags:
-        - Workload
+        - Tag#1_Workload
       summary: uploads an image
       description: ''
       operationId: uploadFile
@@ -274,7 +274,7 @@ paths:
                   description: file to upload
                   type: string
                   format: binary
-  /store/inventory:
+  /Tag#2_annie/inventory:
     get:
       tags:
         - store
@@ -293,7 +293,7 @@ paths:
                   format: int32
       security:
         - api_key: []
-  /store/order:
+  /Tag#2_annie/order:
     post:
       tags:
         - store
@@ -319,10 +319,10 @@ paths:
               $ref: '#/components/schemas/Order'
         description: order placed for purchasing the Workload
         required: true
-  '/store/order/{orderId}':
+  '/Tag#2_annie/order/{orderId}':
     get:
       tags:
-        - store
+        - annie2
       summary: Find purchase order by ID
       description: >-
         For valid response try integer IDs with value >= 1 and <= 10. Other
@@ -354,7 +354,7 @@ paths:
           description: Order not found
     delete:
       tags:
-        - store
+        - annie2
       summary: Delete purchase order by ID
       description: >-
         For valid response try integer IDs with positive integer value. Negative
@@ -376,10 +376,10 @@ paths:
           description: Invalid ID supplied
         '404':
           description: Order not found
-  /user:
+  /Tag#3_annie:
     post:
       tags:
-        - user
+        - annie3
       summary: Create user
       description: This can only be done by the logged in user.
       operationId: createUser
@@ -393,10 +393,10 @@ paths:
               $ref: '#/components/schemas/User'
         description: Created user object
         required: true
-  /user/createWithArray:
+  /Tag#3_annie/createWithArray:
     post:
       tags:
-        - user
+        - annie3
       summary: Creates list of users with given input array
       description: ''
       operationId: createUsersWithArrayInput
@@ -405,10 +405,10 @@ paths:
           description: successful operation
       requestBody:
         $ref: '#/components/requestBodies/UserArray'
-  /user/createWithList:
+  /Tag#3_annie/createWithList:
     post:
       tags:
-        - user
+        - annie3
       summary: Creates list of users with given input array
       description: ''
       operationId: createUsersWithListInput
@@ -417,10 +417,10 @@ paths:
           description: successful operation
       requestBody:
         $ref: '#/components/requestBodies/UserArray'
-  /user/login:
+  /Tag#3_annie/login:
     get:
       tags:
-        - user
+        - annie3
       summary: Logs user into the system
       description: ''
       operationId: loginUser
@@ -460,20 +460,20 @@ paths:
                 type: string
         '400':
           description: Invalid username/password supplied
-  /user/logout:
+  /Tag#3_annie/logout:
     get:
       tags:
-        - user
+        - annie3
       summary: Logs out current logged in user session
       description: ''
       operationId: logoutUser
       responses:
         default:
           description: successful operation
-  '/user/{username}':
+  '/Tag#3_annie/{username}':
     get:
       tags:
-        - user
+        - annie3
       summary: Get user by user name
       description: ''
       operationId: getUserByName
@@ -500,7 +500,7 @@ paths:
           description: User not found
     put:
       tags:
-        - user
+        - annie3
       summary: Updated user
       description: This can only be done by the logged in user.
       operationId: updateUser
@@ -527,7 +527,7 @@ paths:
         required: true
     delete:
       tags:
-        - user
+        - annie3
       summary: Delete user
       description: This can only be done by the logged in user.
       operationId: deleteUser
@@ -588,7 +588,7 @@ components:
       type: oauth2
       flows:
         implicit:
-          authorizationUrl: 'http://sap/opu/odata/sap/Z_GL_WORKLOAD_PLAN_SRV/?$format=xml'
+          authorizationUrl: 'https://d2l00437g.dc02.its.hpecorp.net:44300/sap/opu/odata/sap/Z_GL_WORKLOAD_PLAN_SRV/'
           scopes:
             'write:Workloads': modify Workloads in your account
             'read:Workloads': read your Workloads
