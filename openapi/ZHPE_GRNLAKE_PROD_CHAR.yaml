@@ -8,7 +8,7 @@ info:
     #swagger](http://swagger.io/irc/).  For this sample, you can use the api key
     `special-key` to test the authorization filters.
   version: 1.0.0
-  title: ZHPE_GRNLAKE_PROD_CHAR
+  title: ZHPE_GRNLAKE_PROD_CHAR_Title
   termsOfService: 'https://d2l00438g.dc02.its.hpecorp.net:443/sap/opu/odata/sap/ZHPE_GRNLAKE_PROD_CHAR_SRV/'
   contact:
     email: apiteam@swagger.io
