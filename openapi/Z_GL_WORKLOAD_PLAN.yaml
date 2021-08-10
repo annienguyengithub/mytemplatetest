@@ -21,9 +21,9 @@ tags:
     externalDocs:
       description: Find out more
       url: 'https://d2l00437g.dc02.its.hpecorp.net:44300/sap/opu/odata/sap/Z_GL_WORKLOAD_PLAN_SRV/'
-  - name: Tag#2_annie2
+  - name: Tag#2_annie_order
     description: Access to GL_WorkLoad_Plan orders
-  - name: Tag#3_annie3
+  - name: Tag#3_annie_user
     description: Operations about user
     externalDocs:
       description: Find out more about our GL Workload
@@ -274,10 +274,10 @@ paths:
                   description: file to upload
                   type: string
                   format: binary
-  /Tag#2_annie/inventory:
+  /Tag#2_annie_order/inventory:
     get:
       tags:
-        - Tag#2_annie
+        - Tag#2_annie_order
       summary: Returns Workload inventories by status
       description: Returns a map of status codes to quantities
       operationId: getInventory
@@ -293,10 +293,10 @@ paths:
                   format: int32
       security:
         - api_key: []
-  /Tag#2_annie/order:
+  /Tag#2_annie_order/order:
     post:
       tags:
-        - Tag#2_annie
+        - Tag#2_annie_order
       summary: Place an order for a Workload
       description: ''
       operationId: placeOrder
@@ -319,10 +319,10 @@ paths:
               $ref: '#/components/schemas/Order'
         description: order placed for purchasing the Workload
         required: true
-  '/Tag#2_annie/order/{orderId}':
+  '/Tag#2_annie_order/order/{orderId}':
     get:
       tags:
-        - Tag#2_annie
+        - Tag#2_annie_order
       summary: Find purchase order by ID
       description: >-
         For valid response try integer IDs with value >= 1 and <= 10. Other
@@ -354,7 +354,7 @@ paths:
           description: Order not found
     delete:
       tags:
-        - Tag#2_annie
+        - Tag#2_annie_order
       summary: Delete purchase order by ID
       description: >-
         For valid response try integer IDs with positive integer value. Negative
@@ -376,10 +376,10 @@ paths:
           description: Invalid ID supplied
         '404':
           description: Order not found
-  /Tag#3_annie:
+  /Tag#3_annie_user:
     post:
       tags:
-        - Tag#3_annie
+        - Tag#3_annie_user
       summary: Create user
       description: This can only be done by the logged in user.
       operationId: createUser
@@ -393,10 +393,10 @@ paths:
               $ref: '#/components/schemas/User'
         description: Created user object
         required: true
-  /Tag#3_annie/createWithArray:
+  /Tag#3_annie_user/createWithArray:
     post:
       tags:
-        - Tag#3_annie
+        - Tag#3_annie_user
       summary: Creates list of users with given input array
       description: ''
       operationId: createUsersWithArrayInput
@@ -405,10 +405,10 @@ paths:
           description: successful operation
       requestBody:
         $ref: '#/components/requestBodies/UserArray'
-  /Tag#3_annie/createWithList:
+  /Tag#3_annie_user/createWithList:
     post:
       tags:
-        - Tag#3_annie
+        - Tag#3_annie_user
       summary: Creates list of users with given input array
       description: ''
       operationId: createUsersWithListInput
@@ -417,10 +417,10 @@ paths:
           description: successful operation
       requestBody:
         $ref: '#/components/requestBodies/UserArray'
-  /Tag#3_annie/login:
+  /Tag#3_annie_user/login:
     get:
       tags:
-        - Tag#3_annie
+        - Tag#3_annie_user
       summary: Logs user into the system
       description: ''
       operationId: loginUser
@@ -460,20 +460,20 @@ paths:
                 type: string
         '400':
           description: Invalid username/password supplied
-  /Tag#3_annie/logout:
+  /Tag#3_annie_user/logout:
     get:
       tags:
-        - Tag#3_annie
+        - Tag#3_annie_user
       summary: Logs out current logged in user session
       description: ''
       operationId: logoutUser
       responses:
         default:
           description: successful operation
-  '/Tag#3_annie/{username}':
+  '/Tag#3_annie_user/{username}':
     get:
       tags:
-        - Tag#3_annie
+        - Tag#3_annie_user
       summary: Get user by user name
       description: ''
       operationId: getUserByName
@@ -500,7 +500,7 @@ paths:
           description: User not found
     put:
       tags:
-        - annie3
+        - Tag#3_annie_user
       summary: Updated user
       description: This can only be done by the logged in user.
       operationId: updateUser
