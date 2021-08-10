@@ -1,6 +1,21 @@
 type: reference-docs
-definitionId:
-  Z_GL_WORKLOAD_PLAN
+
+versions:
+  - definitionId: Z_GL_WORKLOAD_PLAN
+    id: v1
+    title: Z_GL_WORKLOAD_PLAN V1
+    isDefault: true
+  - definitionId: Z_GL_WORKLOAD_PRICE_AND_DOC
+    id: v2
+    title: Z_GL_WORKLOAD_PRICE_AND_DOC V2
+    isDefault: false
+    
+  - definitionId: ZHPE_GRNLAKE_PROD_CHAR
+    id: v3
+    title: ZHPE_GRNLAKE_PROD_CHAR V3
+    isDefault: false
+
+
   
 settings:
   generateCodeSamples:
@@ -8,5 +23,7 @@ settings:
       - lang: curl
       - lang: JavaScript
       - lang: Node.js
+      
+  jsonSampleExpandLevel: 'all'
     
       
