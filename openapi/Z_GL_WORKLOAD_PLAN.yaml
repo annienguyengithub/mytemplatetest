@@ -14,13 +14,13 @@ info:
     email: apiteam@swagger.io
   license:
     name: Apache 2.0
-    url: 'https://d2l00437g.dc02.its.hpecorp.net:44300/sap/opu/odata/sap/Z_GL_WORKLOAD_PLAN_SRV/'
+    url: '/sap/opu/odata/sap/Z_GL_WORKLOAD_PLAN_SRV/'
 tags:
   - name: Tag#1_Workload
     description: Everything about your Workloads
     externalDocs:
       description: Find out more
-      url: 'https://d2l00437g.dc02.its.hpecorp.net:44300/sap/opu/odata/sap/Z_GL_WORKLOAD_PLAN_SRV/'
+      url: '/sap/opu/odata/sap/Z_GL_WORKLOAD_PLAN_SRV/'
   - name: Tag#2_annie_order
     description: Access to GL_WorkLoad_Plan orders
   - name: Tag#3_annie_user
