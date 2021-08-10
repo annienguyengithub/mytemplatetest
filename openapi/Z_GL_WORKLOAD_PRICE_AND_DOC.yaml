@@ -8,7 +8,7 @@ info:
     #swagger](http://swagger.io/irc/).  For this sample, you can use the api key
     `special-key` to test the authorization filters.
   version: 1.0.0
-  title: Z_GL_WORKLOAD_PRICE_AND_DOC
+  title: Z_GL_WORKLOAD_PRICE_AND_DOC_Title
   termsOfService: 'https://d2l00437g.dc02.its.hpecorp.net:44300/sap/opu/odata/sap/Z_GL_WORKLOAD_PRICE_AND_DOC_SRV/'
   contact:
     email: apiteam@swagger.io
@@ -42,7 +42,7 @@ paths:
         '405':
           description: Invalid input
       security:
-        - GL_WorkLoad_Plan_auth:
+        - GL_WorkLoad_Price_and_Doc_Auth:
             - 'write:Workloads'
             - 'read:Workloads'
       requestBody:
@@ -190,7 +190,7 @@ paths:
         '405':
           description: Invalid input
       security:
-        - GL_WorkLoad_Plan_auth:
+        - GL_WorkLoad_Price_and_Doc_Auth:
             - 'write:Workloads'
             - 'read:Workloads'
       requestBody:
