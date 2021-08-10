@@ -1,8 +1,6 @@
 type: reference-docs
 definitionId:
-  Z_GL_WORKLOAD_PLAN
-  Z_GL_WORKLOAD_PRICE_AND_DOC
-  ZHPE_GRNLAKE_PROD_CHAR
+  petstore
 settings:
   generateCodeSamples:
     languages:
