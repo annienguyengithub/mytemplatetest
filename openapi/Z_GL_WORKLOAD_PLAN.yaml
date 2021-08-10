@@ -9,25 +9,25 @@ info:
     `special-key` to test the authorization filters.
   version: 1.0.0
   title: Z_GL_WORKLOAD_PLAN
-  termsOfService: '/sap/opu/odata/sap/Z_GL_WORKLOAD_PLAN_SRV/?$format=xml'
+  termsOfService: 'https://d2l00437g.dc02.its.hpecorp.net:44300/sap/opu/odata/sap/Z_GL_WORKLOAD_PLAN_SRV/'
   contact:
     email: apiteam@swagger.io
   license:
     name: Apache 2.0
-    url: 'http://sap/opu/odata/sap/Z_GL_WORKLOAD_PLAN_SRV/?$format=xml'
+    url: 'https://d2l00437g.dc02.its.hpecorp.net:44300/sap/opu/odata/sap/Z_GL_WORKLOAD_PLAN_SRV/'
 tags:
   - name: Workload
     description: Everything about your Workloads
     externalDocs:
       description: Find out more
-      url: 'http://sap/opu/odata/sap/Z_GL_WORKLOAD_PLAN_SRV/?$format=xml'
+      url: 'https://d2l00437g.dc02.its.hpecorp.net:44300/sap/opu/odata/sap/Z_GL_WORKLOAD_PLAN_SRV/'
   - name: store
     description: Access to GL_WorkLoad_Plan orders
   - name: user
     description: Operations about user
     externalDocs:
       description: Find out more about our store
-      url: 'http://sap/opu/odata/sap/Z_GL_WORKLOAD_PLAN_SRV/?$format=xml'
+      url: 'https://d2l00437g.dc02.its.hpecorp.net:44300/sap/opu/odata/sap/Z_GL_WORKLOAD_PLAN_SRV/'
 paths:
   /Workload:
     post:
