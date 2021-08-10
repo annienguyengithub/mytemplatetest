@@ -6,10 +6,10 @@ Define that in the `siteConfig.yaml` file.
 
 ```yaml
 oasDefinitions:
-  petstore: ./openapi/petstore.yaml
+  Z_GL_WORKLOAD_PLAN: ./openapi/Z_GL_WORKLOAD_PLAN.yaml
 ```
 
-Notice that the petstore is pointing to an API definition on the local filesystem.
+Notice that the Z_GL_WORKLOAD_PLAN is pointing to an API definition on the local filesystem.
 
 For a great docs-like-code experience, we recommend pointing to our API registry links.
 That will cause any update to those API definitions to trigger an update to your developer portal.
@@ -26,21 +26,21 @@ Or else, add it to the local file system.
 
 ```yaml
 oasDefinitions:
-  petstore: ./openapi/petstore.yaml
+  GL_workoad: ./openapi/Z_GL_WORKLOAD_PLAN.yaml
   ultra: ./openapi/ultra-api.yaml
   max: https://example.com/max/openapi.yaml
 ```
 
 ### Add a page yaml file
 
-This project includes a sample petstore API.
+This project includes a sample Z_GL_WORKLOAD_PLAN API.
 There is a file at `openapi/reference.page.yaml`.
 
-The contents utilize the key `petstore` defined in the `siteConfig.yaml`.
+The contents utilize the key `Z_GL_WORKLOAD_PLAN` defined in the `siteConfig.yaml`.
 
 ```yaml
 type: reference-docs
-definitionId: petstore
+definitionId: Z_GL_WORKLOAD_PLAN
 ```
 
 That provides the additional metadata we need to render the API.

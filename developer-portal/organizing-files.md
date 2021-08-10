@@ -30,7 +30,7 @@ Your files should be organized into folders. The folder naming is reflected in t
 │   └── ./images/logo.svg
 ├── ./index.mdx
 ├── ./openapi
-│   └── ./openapi/petstore.yaml
+│   └── ./openapi/Z_GL_WORKLOAD_PLAN.yaml
 ├── ./package.json
 ├── ./reference.page.yaml
 ├── ./sidebars.yaml

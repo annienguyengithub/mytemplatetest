@@ -58,12 +58,12 @@ Now, load the upgrade screen and see the sidebar.
 Sidebar nesting is controlled by the `group` keyword.
 Groups can be nested within each other.
 
-Move the upgrade page to display at the very bottom of the sidebar on the left-most side underneath the Petstore reference section.
+Move the upgrade page to display at the very bottom of the sidebar on the left-most side underneath the Z_GL_WORKLOAD_PLAN reference section.
 
 <div class="attention">Pay attention to the indentation spacing</div>
 
 ```yaml
-  - group: Petstore reference
+  - group: GL Workload reference
     expanded: false
     pages:
       - page: openapi/reference.page.yaml/*
