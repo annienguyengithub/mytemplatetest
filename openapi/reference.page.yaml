@@ -1,6 +1,7 @@
 type: reference-docs
 definitionId:
-  petstore
+  Z_GL_WORKLOAD_PLAN
+  
 settings:
   generateCodeSamples:
     languages:
