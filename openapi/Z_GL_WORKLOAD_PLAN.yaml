@@ -113,7 +113,7 @@ paths:
   /Workload/findByTags:
     get:
       tags:
-        - Workload
+        - Tag#1_Workload
       summary: Finds Workloads by tags
       description: >-
         Muliple tags can be provided with comma separated strings. Use tag1,
@@ -142,7 +142,7 @@ paths:
   '/Workload/{WorkloadId}':
     get:
       tags:
-        - Workload
+        - Tag#1_Workload
       summary: Find Workload by ID
       description: Returns a single Workload
       operationId: getWorkloadById
@@ -172,7 +172,7 @@ paths:
         - api_key: []
     post:
       tags:
-        - Workload
+        - Tag#1_Workload
       summary: Updates a Workload in Green Lake with form data
       description: ''
       operationId: updateWorkloadWithForm
@@ -527,7 +527,7 @@ paths:
         required: true
     delete:
       tags:
-        - annie3
+        - Tag#3_annie_user
       summary: Delete user
       description: This can only be done by the logged in user.
       operationId: deleteUser
