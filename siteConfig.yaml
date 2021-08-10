@@ -6,7 +6,9 @@ meta:
 logo: ./images/logo.png
 enableToc: true
 oasDefinitions:
-  petstore: ./openapi/petstore.yaml
+  Z_GL_WORKLOAD_PLAN: ./openapi/Z_GL_WORKLOAD_PLAN.yaml
+  Z_GL_WORKLOAD_PRICE_AND_DOC: ./openapi/Z_GL_WORKLOAD_PRICE_AND_DOC.yaml
+  ZHPE_GRNLAKE_PROD_CHAR:   ./openapi/ZHPE_GRNLAKE_PROD_CHAR.yaml
   # add links to definitions in our API registry by using a fully qualified URL.
 stylesheets:
   - https://fonts.googleapis.com/css?family=Roboto:300,400,600,700
