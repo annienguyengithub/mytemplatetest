@@ -1,8 +1,13 @@
 type: reference-docs
-definitionId: petstore
+definitionId:
+  Z_GL_WORKLOAD_PLAN
+  Z_GL_WORKLOAD_PRICE_AND_DOC
+  ZHPE_GRNLAKE_PROD_CHAR
 settings:
   generateCodeSamples:
     languages:
       - lang: curl
       - lang: JavaScript
       - lang: Node.js
+    
+      
