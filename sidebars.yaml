@@ -38,6 +38,8 @@ training:
         page: developer-portal/mdx.mdx
       - label: Creating React components
         page: developer-portal/custom-component.mdx
+      - label: Annie test json file
+        page: developer-portal/awesome/JSON_Z_GL_WORKLOAD_PLAN_SRV.json
   - group: GL Workload reference
     expanded: false
     pages:
