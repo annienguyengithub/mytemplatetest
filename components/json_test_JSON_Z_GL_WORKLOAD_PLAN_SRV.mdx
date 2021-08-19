@@ -2,6 +2,17 @@
 title: Annie test Json data file
 ---
 {
+  "openapi": "3.0.0",
+  "info": {
+    "title": "Z_GL_WORKLOAD_PLAN_SRV",
+    "version": "0001",
+    "description": "Plan/Packages for WorkLoad\n\n## Entity Data Model\n![ER Diagram](https://yuml.me/diagram/class/[Ety_Plan{bg:orange}],[Ety_Plan]-*>[Ety_Pack],[Ety_ConfigPlan{bg:orange}],[Ety_AnswerList{bg:orange}],[Ety_SubwlList{bg:orange}],[Ety_SubwlList]-*>[Ety_WlKey],[Ety_WlKey{bg:orange}],[Ety_WlKey]-*>[Ety_Config],[Ety_WlKey]-*>[Ety_AnswerList],[Ety_WlList{bg:orange}],[Ety_WlList]-*>[Ety_SubwlList],[Ety_Config{bg:orange}],[Ety_Pack{bg:orange}],[Ety_Cat_Configs{bg:orange}],[Ety_Cat_Configs]-*>[Ety_AnswerList],[Ety_Cat_Configs]-*>[Ety_Plan],[ExWlKeyStr],[ExZglSubworkloadStr],[ExZglWorkloadStr],[Ety_Plan{bg:dodgerblue}]++-*>[Ety_Plan],[Ets_ConfigPlan{bg:dodgerblue}]++-*>[Ety_ConfigPlan],[Ets_AnswerList{bg:dodgerblue}]++-*>[Ety_AnswerList],[Ets_SubwlList{bg:dodgerblue}]++-*>[Ety_SubwlList],[Ets_WlKey{bg:dodgerblue}]++-*>[Ety_WlKey],[Ets_WlList{bg:dodgerblue}]++-*>[Ety_WlList],[Ets_Config{bg:dodgerblue}]++-*>[Ety_Config],[Ets_Pack{bg:dodgerblue}]++-*>[Ety_Pack],[Ets_Cat_Configs{bg:dodgerblue}]++-*>[Ety_Cat_Configs])\n\n### Legend\n![Legend](https://yuml.me/diagram/plain;dir:TB;scale:60/class/[External.Type{bg:whitesmoke}],[ComplexType],[EntityType{bg:orange}],[EntitySet/Singleton/Operation{bg:dodgerblue}])"
+  },
+  "servers": [
+    {
+      "url": "https://eaas-dvs.it.hpe.com/sap/opu/odata/sap/Z_GL_WORKLOAD_PLAN_SRV"
+    }
+  ],
   "Response:": [
     {
       "Workload": "02",
