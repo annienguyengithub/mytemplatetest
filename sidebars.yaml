@@ -40,8 +40,7 @@ training:
         page: developer-portal/custom-component.mdx
       - label: Annie test json file
         page: components/json_schema_JSON_Z_GL_WORKLOAD_PLAN_SRV.mdx
-       - label: Annie test json data file
-        page: components/json_test_JSON_Z_GL_WORKLOAD_PLAN_SRV.mdx
+       
   - group: GL Workload reference
     expanded: false
     pages:
