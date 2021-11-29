@@ -44,7 +44,7 @@ training:
         page: components/json_schema_JSON_Z_GL_WORKLOAD_PLAN_SRV.mdx
        
   - group: GL Workload reference
-    expanded: false
+    expanded: true
     pages:
       - page: openapi/reference.page.yaml/*
 
